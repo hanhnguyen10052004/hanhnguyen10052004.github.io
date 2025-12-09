@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hanh Nguyen Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-color: rgb(20, 20, 53);
+        }
+
+        section {
+            height: 100vh;
+            padding: 60px;
+            box-sizing: border-box;
+        }
+
+        .page1,
+        .page2,
+        .page3,
+        .page4 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin: 0 0 20px 0;
+        }
+
+        /* PAGE 1 */
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 20px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .contact-btn {
+            padding: 10px 20px;
+            font-weight: bold;
+            border: 2px solid white;
+            border-radius: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+        }
+
+        .intro-wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        .desc {
+            margin-left: 15vw;
+            margin-right: 2vw;
+            display: flex;
+            justify-content: flex-end;
+            width: 70%;
+            margin-top: 15vh;
+            line-height: 1.6;
+            font-size: 13px;
+            text-align: justify;
+        }
+
+        .headline {
+            font-size: 10vh;
+            font-weight: 530;
+            width: 90%;
+            text-align: left;
+        }
+
+        /* PAGE 2 */
+        .timeline {
+            border-left: 3px solid white;
+            margin-left: 40px;
+            padding-left: 40px;
+        }
+
+        .item {
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .dot {
+            width: 18px;
+            height: 18px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            left: -49px;
+            top: 4px;
+        }
+
+        .company {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .role {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-top: 10px;
+            line-height: 1.4;
+        }
+
+        /* PAGE 3 */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .card {
+            padding: 20px;
+            border: 1px solid white;
+            border-radius: 8px;
+            color: white;
+        }
+
+        /* PAGE 4 */
+        .list-block {
+            line-height: 1.7;
+        }
+
+        .photo-img-wrapper {
+            width: 260px;
+            height: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-photo {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .intro-wrapper {
+            align-items: center;
+            gap: 60px;
+        }
+
+        .headline {
+            max-width: 600px;
+        }
+
+        .desc {
+            max-width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- PAGE 1 -->
+    <section class="page1" id="home">
+        <div class="top-bar">
+            <a href="#home" class="logo">Hanhnguyen_portfolio</a>
+            <a href="#contact" class="contact-btn">Contact</a>
+
+        </div>
+
+        <div class="intro-wrapper">
+            <div class="photo-img-wrapper">
+                <img src="assets/img/MTXX_MR20240527_123929831.jpg" class="profile-photo" alt="Hanh Nguyen" />
+            </div>
+            <div>
+                <div class="headline">Passionate about
+                    <br />
+                    Business Development & Consulting
+                </div>
+                <div class="desc">
+                    Final-year International Business Economics student at Foreign Trade University (FTU), aspiring to
+                    develop business analyst and strategy consultant career. Demonstrates strong analytical thinking,
+                    research ability, and leadership through business projects, startup competitions, and social
+                    initiatives. Passionate about solving problems that drive economic, environmental, and social
+                    impact.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE 2 -->
+    <section class="page2">
+        <h1>EXPERIENCES</h1>
+        <div class="timeline">
+            <div class="item">
+                <div class="dot"></div>
+                <div class="company">Chubb Life Vietnam – life insurance solutions</div>
+                <div>Hanoi | 03/2025 - 08/2025</div>
+                <div class="role">Sales Intern</div>
+                <ul>
+                    <li>Generated qualified leads via networking, digital channels, and telesales to expand customer
+                        base.</li>
+                    <li>Managed client data and ensured accurate documentation of financial proposals.</li>
+                    <li>Supported health check events and workshops, improving client satisfaction and operational
+                        efficiency.</li>
+                    <li>Followed up and supported 10+ clients, boosting engagement and service quality.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="dot"></div>
+                <div class="company">HouseNow Ltd Company – proptech & real estate startup</div>
+                <div>Hanoi | 05/2024 - 10/2024</div>
+                <div class="role">Sales Support</div>
+                <ul>
+                    <li>Conducted weekly real estate market analysis and maintained 100+ CRM entries with high accuracy.
+                    </li>
+                    <li>Contacted 100+ prospects weekly for insights and conversion strategies.</li>
+                    <li>Collaborated with Marketing & UI/UX teams to optimize campaign performance, user experience and
+                        lead quality.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE 3 -->
+    <section class="page3">
+        <h1>EDUCATION • HONORS & AWARDS • KEY SKILLS</h1>
+        <div class="grid">
+            <div class="card">
+                <h3>Education</h3>
+                    <p>Foreign Trade University<br>Bachelor in International Business Economics<br>GPA: 3.52/4.00 
+                        <p style="margin-left: 24px;"> Informatics: 9.0/10.0
+                        <br>Theory of Probability and Mathematical Statistics: 9.3/10.0
+                        <br>Econometrics: 9.0/10.0
+                        <br>Time Series Models for Economics and Business: 9.6/10.0
+                        <br>Data Management System: 9.7/10.0 </p>
+                    </p> 
+            </div>
+
+            <div class="card">
+                <h3>Honors & Awards</h3>
+                <ul>
+                    <li>Top 13 – G’contest 2025: a data analytic case competition issued by Global Economics Club
+                        (GEC-FTU)</li>
+                    <li>Top 20 – LOGIN 2024: a Logistics & Supply Chain Management competition issued by Logistics and
+                        Supply Chain Club (LSC), National Economics University</li>
+                    <li>Top 5 – SV Startup 2022 – FTU Round</li>
+                    <li>Top 30 – Kawai Business Startup 2022: issued by Tomorrow Entrepreneurs Club (TEC), Foreign Trade
+                        University</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Key Skills</h3>
+                <ul>
+                    <li>Analytical & Research Skills: Market Research, Data Interpretation, Business Analysis, Problem
+                        Solving</li>
+                    <li>Tools: Power BI, SQL (basic), Python (basic)</li>
+                    <li>Soft Skills: Leadership, Teamwork, Communication, Strategic Thinking</li>
+                    <li>Languages: Vietnamese (Native), English (Fluent)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE 4 -->
+    <section class="page4">
+        <h1>LEADERSHIP & EXTRACURRICULAR</h1>
+        <div class="grid">
+            <div class="card">
+                <h3>Circular Economy Youth Community (CEYC) – Head of Organization</h3>
+                <p>• Planned, directed, and managed the end-to-end organization of CE Recruitment 4.0 (56 final
+                    candidates), CE Field Trip 2023 (40 participants), and CE Hackathon 2024 (50 teams) to optimize
+                    resources, strengthen team capacity, maximize impact, and expand
+                    external partnerships.</p>
+            </div>
+
+            <div class="card">
+                <h3>FTU School of Economics & International Business – Collaborator</h3>
+                <p>• Supported administrative operations across departments and managed stakeholder coordination for the
+                    FTU WTO Chair Science Conferences 2023 & 2024, ensuring professional execution and strong academic
+                    engagement.</p>
+            </div>
+
+            <div class="card">
+                <h3>Food Town – Social Project to Recycle Leftover Food – Member of Human Resources Department</h3>
+                <p>• Organized two large-scale charity events and led Food Town Recruitment 2.0 (50+ applicants), along
+                    with three team-bonding sessions to enhance engagement and community impact.</p>
+            </div>
+
+            </div> 
+    
+    
+    <!-- PAGE 5 -->
+    <section id="contact" class="section">
+        <h2 class="section-title">CONTACT</h2>
+        <div class="contact-box">
+            <p><strong>Email:</strong> hanhnguyen10052004@gmail.com</p>
+            <p><strong>Phone:</strong> 0984 928 208</p>
+            <p><strong>LinkedIn:</strong> linkedin.com/in/hanhng0984928208/</p>
+            <p><strong>Github:</strong> hanhnguyen1005.github.io</p>
+        </div>
+    </section>
+
+</body>
+
+</html>
